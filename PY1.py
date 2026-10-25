@@ -289,3 +289,55 @@ if item in arr:
 else:
     print("Item not found in the list")"""
 
+#BINARY SEARCH
+
+"""arr = [10,15,20,25]
+
+l=len(arr)
+
+print("Elements of the list are:")
+for x in arr:
+    print(x)
+
+item = int(input("Enter the item you are searching: "))
+
+lb=0
+ub=l-1
+
+
+
+found=False
+while lb<=ub:
+ mid=(lb+ub)//2
+ if arr[mid]==item:
+     found=True
+     break
+ elif item>arr[mid]:
+   lb=mid+1
+ else:
+   ub=mid-1   
+if found:
+   print("Item foud at position ",mid+1)
+else:   
+   print("Item Not Found")"""
+
+#USER INPUTED ITEMS FOR LIST
+
+#1.Method 1\: Number of elements or items is known    
+
+"""n=int(input("Enter the length of the list:"))
+elems=[]
+
+for i in range(n):
+    item = input(f"Enter item {i + 1}: ")
+    elems.append(item)
+print("Your List is:",elems)"""
+
+#2.Method 2\:
+# For a list of strings
+#items = input("Enter items separated by spaces: ").split()
+#print("List:", items)
+
+# For a list of numbers (integers)
+#numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+#print("List of numbers:", numbers)
