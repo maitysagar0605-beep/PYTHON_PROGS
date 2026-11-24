@@ -48,7 +48,9 @@ def bisection_method(func, a, b, error_accept):
             fa = fc
 
         error = abs(b - a)
-
+        
+    print(f"The function used is: {func}")    
+    print(f"The final root approximation is: {(a + b) / 2}")
     print(f"The final error is: {error}")
     print(f"The final lower boundary 'a' is {a} and upper boundary 'b' is {b}")
     return a, b, error
