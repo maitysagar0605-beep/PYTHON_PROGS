@@ -14,6 +14,6 @@ def newton_method(f, df, x0, tol=1e-7, max_iter=100):
 f = lambda x: x**3 - 2*x - 5
 df = lambda x: 3*x**2 - 2
 
-print("Finding root of the function f(x) = x^3 - 2x - 5 using Newton's method.")
+print("Finding root of the function f(x) = x**3 - 2*x - 5 using Newton's method.")
 root = newton_method(f, df, x0=2.0)
 print(f"Root: {root:.7f}")
