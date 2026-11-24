@@ -37,5 +37,6 @@ def secant(x0, x1, tol=0.0001):
 
 
 # Run both methods with initial guesses 1 and 2
+print("Finding root using Regula-Falsi and Secant methods for f(x) = x**3 - x - 2")
 regula_falsi(1, 2)
 secant(1, 2)
